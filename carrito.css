@@ -35,6 +35,7 @@ body {
 }
 
 .encabezado-lateral img {
+    background-color: transparent;
     width: 100%;
     object-fit: fill;
 }
