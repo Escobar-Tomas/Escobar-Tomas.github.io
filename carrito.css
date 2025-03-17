@@ -1,0 +1,157 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.encabezado-lateral {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    width: 200px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed; /* Fija la posición de la barra lateral */
+    left: 0;
+    top: 0;
+}
+
+.encabezado-lateral .contenedor-logo{
+    background-color: #ff4500;
+    display: flex;
+    width: 90%;
+    height: 10%;
+}
+
+.encabezado-lateral img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.encabezado-lateral a{
+    color: white;
+    text-decoration: none;
+}
+
+.encabezado-lateral a button {
+    background-color: #ff4500;
+    color: white;
+    font-size: larger;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.contenido-carrito-compras {
+    background-color: #fff;
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 1%;
+    overflow-y: auto; /* Permite el desplazamiento vertical de la sección de productos */
+    margin-left: 240px; /* Mueve el contenido principal a la derecha de la barra lateral */
+}
+
+.contenido-carrito-compras h1 {
+    background-color: transparent;
+    font-size: 24px;
+}
+
+.contenido-carrito-compras .grilla-productos{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    margin-right: 3%;
+    gap: 20px;
+}
+
+.contenido-carrito-compras .grilla-productos .carta-producto{
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-carrito-compras .grilla-productos .carta-producto div{
+    text-align: center;
+}
+
+.contenido-carrito-compras .grilla-productos .carta-producto img{
+    width: 100px;
+    height: 100px;
+}
+
+.contenido-carrito-compras .grilla-productos .carta-producto .nombre-producto{
+    width: 45%;
+}
+
+.contenido-carrito-compras .grilla-productos .carta-producto .btn-borrar{
+    background-color: transparent;
+    border: 0;
+    margin-right: 10px;
+}
+
+.btn-borrar:hover{
+    color: red;
+}
+
+.contenido-carrito-compras p {
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.contenido-carrito-compras button {
+    font-size: larger;
+    cursor: pointer;
+}
+
+.contenido-carrito-compras .acciones{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contenido-carrito-compras .acciones-izquierda .vaciar-carrito{
+    background-color: #ff4500;
+    color: white;
+    font-size: larger;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.contenido-carrito-compras .acciones-derecha{
+    display: flex;
+}
+
+.contenido-carrito-compras .acciones-derecha .calcular-total{
+    display: flex;
+    background-color: lightgrey;
+    padding: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.contenido-carrito-compras .acciones-derecha .btn-comprar{
+    background-color: #ff4500;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
